@@ -1,0 +1,63 @@
+print("WELCOME TO MY COMPUTER QUIZ GAME!")
+yesorno=input("DO YOU WANT TO PLAY ? Y OR N?\n")
+score=0
+total_score=0
+correct_answer=0
+if(yesorno.lower()=="y"):
+    print("okay! let's play :) ")
+    question1=input("WHAT DOES CPU STANDS FOR ? \n")
+    if(question1.lower()=="central processing unit"):
+        print("correct answer")
+        score=score+25
+        correct_answer=correct_answer+1
+    else:
+        print("incorrect answer")
+        score=score
+    question2=input("WHAT DOES GPU STANDS FOR ?\n")
+    if(question2.lower()=="graphics processing unit"):
+        print("correct answer")
+        score=score+25
+        correct_answer = correct_answer + 1
+    else:
+        print("incorrect answer")
+        score=score
+    question3=input("WHAT DOES RAM STANDS FOR ?\n")
+    if(question3.lower()=="random access memory"):
+        print("correct answer")
+        score=score+25
+        correct_answer = correct_answer + 1
+    else:
+        print("wrong answer")
+        score=score
+    question4=input("WHAT DOES PSU STANDS FOR ?\n")
+    if(question4.lower()=="power supply unit"):
+        print("correct answer")
+        score=score+25
+        correct_answer = correct_answer + 1
+    else:
+        print("wrong answer")
+        score=score
+    total_score=score
+    print(f"THE TOTAL SCORE YOU HAVE SCORED IS {total_score}")
+    if(correct_answer==1):
+        print(f"correct answer is {correct_answer} ie 25 percentage")
+    if (correct_answer ==2):
+        print(f"correct answer is {correct_answer} ie 50 percentage")
+    if (correct_answer ==3):
+        print(f"correct answer is {correct_answer} ie 75 percentage")
+    if (correct_answer ==4):
+        print(f"correct answer is {correct_answer} ie 100 percentage")
+    if(total_score>=50):
+        print("you have won the quiz program")
+        if(total_score==100):
+            print("you have got full marks in the quiz here is your gift \n")
+            num=6
+            for i in range(1,num):
+                star=" " * (num-i) + "*" * (2*i - 1)
+                print(star)
+    else:
+        print("you have lost the quiz program")
+elif(yesorno.lower()=="n"):
+    print("oka then get out")
+else:
+    print("ERROR WHAT DID U TYPE BRO")
