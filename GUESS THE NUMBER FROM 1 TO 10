@@ -1,0 +1,14 @@
+import random
+randomfun = random.randint(1,11)
+i=1
+while i == 1:
+    guess = int(input("GUESS THE NUMBER"))
+    if(guess == randomfun):
+        print("YOU GUESSED THE NUMBER CORRECTLY")
+        break
+    elif(guess < randomfun):
+        print("THE GUESSED NUMBER IS SMALLER THAN THE RANDOM NUMBER")
+        print("TRY AGAIN")
+    elif(guess > randomfun):
+        print("THE GUESSED NUMBER IS LARGER THAN THE RANDOM NUMBER")
+        print("TRY AGAIN")
