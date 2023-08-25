@@ -1,0 +1,60 @@
+game=input("DO YOU WANT TO PLAY THE GAME 'Y' OR 'N' \n")
+if(game.lower()=='y' or game.lower()=='yes'):
+    print("you are walking into a forest and you see a bridge and underneath the bridge another road is there")
+    road=input("will you take the bridge 'BRIDGE' or underneath the road 'UNDERNEATH' \n")
+    if(road.lower()=='bridge'):
+        crack=input("so you are walking on the bridge and heard a cracking sound would you run or not 'y' or 'n' ? \n")
+        if(crack.lower()=='y'or crack.lower()=='yes'):
+            print("good job! you have just escaped a collapsing bridge")
+            print("as you was walking you saw 2 ways to travel one was a road but it was a long road and next to it was a river but it would make u reach more faster than the road")
+            way=input("which way will you go the road 'ROAD' or the river 'RIVER' ")
+            if(way.lower()=='road'):
+                print("you just escaped the river full of crocodiles")
+                print("as you was walking the road you saw a jellewery box ")
+                walk=input("will u open it 'OPEN' or would not open it and walk again 'WALK' ")
+                if(walk.lower()=='open'):
+                    print("a snake came inside the box and bit u ")
+                    print('GAME OVER')
+                if(walk.lower()=='walk'):
+                    print("you have found the way to get out of the forest")
+                    run=input("type run 'RUN' ")
+                    if(run.lower()=='run'):
+                        print("finally you have came out of the forrest and you have successfully \n")
+                        print("WON THE GAME")
+            if(way.lower()=='river'):
+                print("you just saw a life jacket and have put it on")
+                swim=input("TYPE swim to 'swim'\n")
+                if(swim.lower()=='swim'):
+                    print("sorry bro u have just been swimming into the crocodiles river")
+                    print("moral of the story : never take short cuts to be bruce wayne(rich guy) ")
+                    print("GAME OVER")
+        if(crack.lower()=='n'or crack.lower()=='no'):
+            print("ooh ooh THE BRIDGE IS COLLAPSING OOOOOOOOOOOOOOOO")
+            print("sorry you are dead")
+            print("GAME OVER")
+    if(road.lower()=='underneath'):
+        print("you have started your walk towards underneath the bridge ")
+        print( "as you was walking you saw 2 ways to travel one was a road but it was a long road and next to it was a river but it would make u reach more faster than the road")
+        way = input("which way will you go the road 'ROAD' or the river 'RIVER' \n")
+        if (way.lower() == 'road'):
+            print("you just escaped the river full of crocodiles")
+            print("as you was walking the road you saw a jellewery box ")
+            walk = input("will u open it 'OPEN' or would not open it and walk again 'WALK' \n")
+            if (walk.lower() == 'open'):
+                print("a snake came inside the box and bit u ")
+                print('GAME OVER')
+            if (walk.lower() == 'walk'):
+                print("you have found the way to get out of the forest")
+                run = input("type run 'RUN' \n")
+                if (run.lower() == 'run'):
+                    print("finally you have came out of the forrest and you have successfully \n")
+                    print("WON THE GAME")
+        if (way.lower() == 'river'):
+            print("you just saw a life jacket and have put it on")
+            swim = input("TYPE swim to 'swim'")
+            if (swim.lower() == 'swim'):
+                print("sorry bro u have just been swimming into the pool of crocodiles")
+                print("moral of the story : never take short cuts to be bruce wayne(rich guy) ")
+                print("GAME OVER")
+if(game.lower()=='n' or game.lower()=='no'):
+    print("oka then no game for you!!!! you just missed the opportunity to play the game byee")
