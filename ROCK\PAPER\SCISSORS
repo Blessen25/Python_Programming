@@ -1,0 +1,59 @@
+import random
+computer =['ROCK','PAPER','SCISSORS']
+HUMAN_SCORE=0
+COMPUTER_SCORE=0
+i=1
+while i < 6:
+    choice = random.choice(computer)
+    rock = input("Type ROCK/PAPER/SCISSORS OR TYPE 'Q' to quit \n")
+    if(rock.lower()=='rock'):
+        if(choice.lower()=='paper'):
+            print("THE COMPUTER SCORES THE ROUND")
+            COMPUTER_SCORE=COMPUTER_SCORE+1
+            HUMAN_SCORE=HUMAN_SCORE
+        elif(choice.lower()=='rock'):
+            print("BOTH COMPUTER AND HUMAN IS TIE NO POINT")
+            COMPUTER_SCORE=COMPUTER_SCORE
+            HUMAN_SCORE=HUMAN_SCORE
+        else:
+            print("THE HUMAN SCORES THIS ROUND")
+            HUMAN_SCORE=HUMAN_SCORE+1
+            COMPUTER_SCORE=COMPUTER_SCORE
+    if(rock.lower()=='paper'):
+        if (choice.lower() == 'scissors'):
+            print("THE COMPUTER SCORES THE ROUND")
+            COMPUTER_SCORE = COMPUTER_SCORE + 1
+            HUMAN_SCORE = HUMAN_SCORE
+        elif (choice.lower() == 'paper'):
+            print("BOTH COMPUTER AND HUMAN IS TIE NO POINT")
+            COMPUTER_SCORE = COMPUTER_SCORE
+            HUMAN_SCORE = HUMAN_SCORE
+        else:
+            print("THE HUMAN SCORES THIS ROUND")
+            HUMAN_SCORE = HUMAN_SCORE + 1
+            COMPUTER_SCORE = COMPUTER_SCORE
+    if(rock.lower()=='scissors'):
+        if (choice.lower() == 'rock'):
+            print("THE COMPUTER SCORES THE ROUND")
+            COMPUTER_SCORE = COMPUTER_SCORE + 1
+            HUMAN_SCORE = HUMAN_SCORE
+        elif (choice.lower() == 'scissors'):
+            print("BOTH COMPUTER AND HUMAN IS TIE NO POINT")
+            COMPUTER_SCORE = COMPUTER_SCORE
+            HUMAN_SCORE = HUMAN_SCORE
+        else:
+            print("THE HUMAN SCORES THIS ROUND")
+            HUMAN_SCORE = HUMAN_SCORE + 1
+            COMPUTER_SCORE = COMPUTER_SCORE
+    if(rock.lower()=='q' or rock.lower()=='quit'):
+        print("THE GAME IS OVER NOW TO CHECK THE SCORE")
+        break
+i+=1
+if(COMPUTER_SCORE>HUMAN_SCORE):
+        print("COMPUTER WON THE GAME")
+        print(COMPUTER_SCORE)
+elif(COMPUTER_SCORE==HUMAN_SCORE):
+        print("NOBODY WON THE MATCH ITS A TIE")
+else:
+    print("HUMAN WON THE GAME")
+    print(HUMAN_SCORE)
