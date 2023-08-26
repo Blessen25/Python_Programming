@@ -1,0 +1,21 @@
+print("ENTER A PASSWORD TO GET INTO THE USER FUNCTION ")
+password=input()
+while True:
+    choice=input("ENTER THE PASSWORD TO ACCESS THE USER FUNCTION \n")
+    if(password==choice):
+        print("YOU HAVE GOT THE CORRECT PASSWORD\n")
+        start=input("DO YOU WANT TO VIEW 'VIEW' , ADD 'ADD', OR QUIT THE FOLLOWING SECTION 'QUIT' \n")
+        if(start.lower()=='add'):
+            with open('text.txt','a') as file:
+                NAME = input('ENTER YOUR NAME \n')
+                AGE  = int(input('ENTER YOUR AGE \n'))
+                DATE_OF_BIRTH = input("ENTER YOUR DATE OF BIRTH eg YEAR/MONTH/DAY \n")
+                SAVINGS = int(input("ENTER YOUR SAVINGS\n"))
+                content=f"NAME : {NAME} \nAGE : {AGE}\nDATE_OF_BIRTH : {DATE_OF_BIRTH} \nSAVINGS : {SAVINGS} \n"
+                file.write(content)
+        if(start.lower()=='quit'):
+            break
+        if(start.lower()=='view'):
+            file2= open("text.txt","r")
+            print(file2.read())
+        
