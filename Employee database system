@@ -1,0 +1,145 @@
+#Project 5: Employee Database System
+# Design a program that allows users to manage employee records.
+# Create employee objects with attributes like name, ID, position, and salary.
+# Implement features to add, update, delete, and display employee information using file handling.
+
+import json
+class employee:
+    def __init__(self,Name,Id,Position,Salary,data):
+        self.Name = Name
+        self.Id = Id
+        self.Position = Position
+        self.Salary = Salary
+        self.data = data
+    def add(self):
+        with open('employee.txt', 'r') as file:
+            self.data = json.load(file)
+        new_data = {
+            "Name" : self.Name,
+            "Id" : self.Id ,
+            "Position" : self.Position,
+            "Salary" : self.Salary
+        }
+        self.data.append(new_data)
+        with open('employee.txt', 'w') as file:
+            json.dump(self.data, file, indent=2)
+        file.close()
+        print("New Employee is added to the File")
+
+
+
+    @staticmethod
+    def display():
+        with open("employee.txt", "r") as file:
+            content = file.read()
+        print(content)
+    @staticmethod
+    def update():
+        with open("employee.txt", "r") as file:
+            loaded_dict = json.load(file)
+            print(loaded_dict)
+            print("\n")
+        size = len(loaded_dict)
+        inp = input("Enter the 'Name' of the Employee in which details should be changed :\n")
+        for person in loaded_dict:
+            if (person["Name"] == inp):
+                updat = True
+                while updat:
+                    yesorno = input("What do you want to update? Id or Position or Salary \n")
+                    if (yesorno.upper() == "ID"):
+                        person["Id"] = input("Enter the Employees Id \n")
+                        yesorno1 = input("Do you want to continue to update ? yes or no ? \n")
+                        if (yesorno1.upper() == "YES" or yesorno1.upper() == "Y"):
+                            print("Ok you choose to update the values again")
+                        else:
+                            updat = False
+                    if (yesorno.upper() == "POSITION"):
+                        person["Position"] = input("Enter the Employees Position \n")
+                        yesorno1 = input("Do you want to continue to update ? yes or no ? \n")
+                        if (yesorno1.upper() == "YES" or yesorno1.upper() == "Y"):
+                            print("Ok you choose to update the values again")
+                        else:
+                            updat = False
+                    if (yesorno.upper() == "SALARY"):
+                        person["Salary"] = input("Enter the Employees Salary \n")
+                        yesorno1 = input("Do you want to continue to update ? yes or no ? \n")
+                        if (yesorno1.upper() == "YES" or yesorno1.upper() == "Y"):
+                            print("Ok you choose to update the values again")
+                        else:
+                            updat = False
+                    if (yesorno.upper() == "NO"):
+                        print("You have updated")
+                        break
+                with open("employee.txt", "w") as file2:
+                    json.dump(loaded_dict, file2, indent=2)
+    @staticmethod
+    def delete():
+        with open("employee.txt","r") as file:
+            Data = json.load(file)
+            print(Data)
+            print("\n")
+        print("Employees Details to be deleted")
+        print("--------------------------------")
+        inp = input("Enter the 'Name' of the person whose detail should be deleted : \n")
+        deleted_data = [item for item in data if item["Name"] !=inp ]
+        with open("employee.txt","w") as file2:
+             json.dump(deleted_data,file2,indent=2)
+             print("You have successfully deleted data from the file")
+data = [
+    {
+        "Name": "Rahul",
+        "Id": "1",
+        "Postion": "Software Developer",
+        "Salary": "80000"
+    },
+    {
+        "Name": "Tom",
+        "Id": "2",
+        "Postion": "Software Associate",
+        "Salary": "60000"
+    },
+    {
+        "Name": "Dan",
+        "Id": "3",
+        "Postion": "Accountant",
+        "Salary": "50000"
+    },
+]
+with open("employee.txt","w")as file:
+    json.dump(data,file,indent=2)
+while True:
+    print("Enter your choice")
+    print(" 1 to ADD ")
+    print(" 2 to UPDATE ")
+    print(" 3 to DELETE ")
+    print(" 4 to DISPLAY ")
+    print(" 5 to QUIT ")
+    choice = int(input("\n"))
+
+    if(choice == 1):
+        print("You have selected to add employees")
+        print("-----------------------------------")
+        print("\n")
+        Name = input("Enter Employee Name \n")
+        Id  = input("Enter Employee Id \n")
+        Position = input("Enter Employee Position \n")
+        Salary = int(input("Enter Employee Salary \n"))
+        employee2 = employee(Name,Id,Position,Salary,data)
+        ok = employee2.add()
+    if(choice == 2):
+        print("You have decided to UPDATE Employee details from the file")
+        print("-----------------------------------------------------------")
+        employee.update()
+    if(choice == 3):
+        employee.delete()
+    if(choice == 4):
+        print("you have Choosed to display Employee details")
+        print("---------------------------------------------")
+        print("\n")
+        employee.display()
+    if(choice == 5):
+        print("You have Choosed to Exit from Employee details")
+        break
+    if(choice >5 or choice <=0):
+        print("Please try again!!!")
+        print("------------------")
