@@ -1,0 +1,85 @@
+import random
+start = 1
+intial = True
+intial1 = True
+def roll():
+    roll = random.randint(1,6)
+    return roll
+while intial:
+    player1 = input("Are you ready to play the game 'yes' or 'no' \n")
+    if(player1.upper() == 'N' or player1.upper() == 'NO'):
+        print("You have not started the game !!!! you have decided to quit the game LOL UNDERSTANDABLE CRY MORE")
+        intial = False
+    if(player1.upper() =='Y' or player1.upper() == 'YES' ):
+        print("You have started the game")
+        start += roll()
+        if(start == 6):
+            print("Wow you are lucky u just found yourself a ladder which gives u 10 points")
+            start += 10
+            print("POINT : ",start)
+        else:
+            print("POINT : ", start)
+        while intial1:
+            yes = input("press 'y' to continue \n")
+            if(yes.upper() == 'Y' or yes.upper() == 'YES'):
+                start += roll()
+                if (start == 12):
+                    print("Wow you are lucky u just found yourself a ladder which gives u 10 points")
+                    start += 10
+                    print("POINT : ", start)
+                if(start == 9):
+                    print("ooh ooh you have been just eating by a snake which makes u lose 5 points")
+                    start -= 5
+                    print("POINT : ", start)
+                if (start == 16):
+                    print("Wow you are lucky u just found yourself a ladder which gives u 10 points")
+                    start += 10
+                    print("POINT : ", start)
+                if(start == 18):
+                    print("ooh ooh you have been just eating by a snake which makes u lose 10 points")
+                    start -= 10
+                    print("POINT : ", start)
+                if (start == 32):
+                        print("Wow you are lucky u just found yourself a ladder which gives u 10 points")
+                        start += 10
+                        print("POINT : ", start)
+                if (start == 38):
+                        print("ooh ooh you have been just eating by a snake which makes u lose 18 points")
+                        start -= 18
+                        print("POINT : ", start)
+                if (start == 48):
+                    print("Wow you are lucky u just found yourself a ladder which gives u 30 points")
+                    start += 30
+                    print("POINT : ", start)
+                if(start == 51):
+                    print("ooh ooh you have been just eating by a snake which makes u lose 23 points")
+                    start -= 23
+                    print("POINT : ", start)
+                if (start == 60):
+                    print("Wow you are lucky u just found yourself a ladder which gives u 30 points")
+                    start += 30
+                    print("POINT : ", start)
+                if(start == 72):
+                    print("ooh ooh you have been just eating by a snake which makes u lose 42 points")
+                    start -= 42
+                    print("POINT : ", start)
+                if (start == 90):
+                    print("Wow you are lucky u just found yourself a ladder which gives u 5 points")
+                    start += 5
+                    print("POINT : ", start)
+                if(start == 91):
+                    print("ooh ooh you have been just eating by a snake which makes u lose 25 points")
+                    start -= 25
+                    print("POINT : ", start)
+                if (start == 99):
+                    print("ooh ooh you have been just eating by a snake which makes u lose 35 points")
+                    start -= 35
+                    print("POINT : ", start)
+                if(start >= 100):
+                    print("you have reached the end congratssss!!!!")
+                    print("you have earned 100 pointsss")
+                    print("Congrats you have won the game")
+                    intial1 = False
+                    intial = False
+                else:
+                    print("POINT : ", start)
