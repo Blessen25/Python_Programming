@@ -1,0 +1,144 @@
+# Project 8: Contact Book
+# Build a contact book application that enables users to add, search, update, and delete contacts.
+# Utilize dictionaries to store contact details and provide a user-friendly interface for managing contacts.
+import json
+
+def add(Name,Phone_number):
+    with open("Contact Book.txt","r") as file:
+        data2 = json.load(file)
+    new_data = {
+            "Name" : Name,
+            "Phone Number" : Phone_number
+            }
+    data2.append(new_data)
+    with open("Contact Book.txt","w")as file2:
+        json.dump(data2, file2, indent=2)
+    file.close()
+    print("New Phone Number added to the contact")
+def search():
+    with open("Contact Book.txt", "r") as file:
+        content = json.load(file)
+        print(content)
+        print("\n")
+    Valad = True
+    while Valad:
+        imp = inp = input("Enter the 'Name' of the person whose Phone Number is to be 'SEARCHED' : \n")
+        filetered_data = [item for item in content if item["Name"] == inp]
+        if (filetered_data == []):
+            print("Please type the correct spelling")
+        else:
+            with open("Search_list", "w") as file2:
+                json.dump(filetered_data, file2, indent=2)
+            with open("Search_list", "r") as file3:
+                content2 = file3.read()
+            print("DETAILS OF THE PERSON IS : ")
+            print(content2)
+            break
+def delete():
+    with open("Contact Book.txt", "r") as file:
+        content = json.load(file)
+        print("DETAILS OF THE PERSON IS : ")
+        print(content)
+        print("\n")
+    Valad = True
+    while Valad:
+        imp = inp = input("Enter the 'Name' of the person whose Phone Number is to be 'DELETED' : \n")
+        filetered_data = [item for item in content if item["Name"] != inp]
+        if (filetered_data == content):
+            print("Please type the correct spelling")
+        else:
+            with open("Contact Book.txt", "w") as file2:
+                json.dump(filetered_data, file2, indent=2)
+            print("CONTACT BOOK AFTER DELETING : ")
+            with open("Contact Book.txt","r") as file3:
+                content3 = file3.read()
+            print(content3)
+            break
+def display():
+    with open("Contact Book.txt","r") as file:
+        content = file.read()
+        print(content)
+def update():
+    with open("Contact Book.txt", "r") as file:
+        content = json.load(file)
+        print(content)
+    name = input("Enter the Name of the person to be updated :\n")
+    yes = True
+    for item in content:
+        if (name == item["Name"]):
+            while yes:
+                yesorno = input("Do you want to update his phone number? yes or no? : \n")
+                if (yesorno.upper() == 'Y' or yesorno.upper() == 'YES'):
+                    ok = True
+                    while ok:
+                        phonenumber = input("Enter the phone number to be updated :\n")
+                        if (len(phonenumber) == 10):
+                            item["Phone Number"] = phonenumber
+                            print("You have successfully updated phone number")
+                            ok = False
+                            with open("Contact Book.txt", "w") as file2:
+                                json.dump(content, file2, indent=2)
+                        else:
+                            print("Wrong phone number try again")
+                if (yesorno.upper() == 'N' or yesorno.upper() == 'NO'):
+                    print("You have decided not to update")
+                    yes = False
+
+
+data = [
+    {
+        "Name" : "Ram",
+        "Phone Number" : "9446573821"
+    },
+    {
+        "Name" : "Ann",
+        "Phone Number" : "9560432135"
+    }
+    ]
+with open("Contact Book.txt","w") as file:
+    json.dump(data,file,indent = 2)
+valid = True
+while valid:
+    print("Enter your Choice")
+    print("1 to 'ADD'")
+    print("2 to 'SEARCH'")
+    print("3 to 'UPDATE'")
+    print("4 to 'DELETE'")
+    print("5 to 'DISPLAY'")
+    print("6 to 'EXIT'")
+    Choice = int(input(""))
+    if(Choice == 1):
+        print("You have Entered to ADD new person into your contact")
+        print("-----------------------------------------------------")
+        Name = input("Enter Name of the person :\n")
+        phn = True
+        while phn:
+            Phone_number = input("Enter the Phone number of the person :\n")
+            size = len(Phone_number)
+            if(size == 10):
+                add(Name,Phone_number)
+                phn = False
+            else:
+                print("Wrong phone number please try again!!!")
+    if (Choice == 2):
+        print("You have Entered to SEARCH a person in your contact")
+        print("-----------------------------------------------------")
+        search()
+    if (Choice == 3):
+        print("You have Entered to UPDATE a person in your contact")
+        print("-----------------------------------------------------")
+        update()
+    if (Choice == 4):
+        print("You have Entered to DELETE a person in your contact")
+        print("-----------------------------------------------------")
+        delete()
+    if (Choice == 5):
+        print("You have Entered to DISPLAY the contact book")
+        print("-----------------------------------------------------")
+        display()
+    if(Choice == 6):
+        print("You have Choosen to EXIT from the contact list")
+        break
+    elif(Choice >=7 or Choice<=0):
+        print(" You Have Entered wrong choice !!! Please try again !!!!")
+        print("--------------------------------------------------------")
