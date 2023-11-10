@@ -1,0 +1,238 @@
+malayalam= {
+         "me": "ഞാൻ",
+         "you": "നിനക്ക്",
+         "i": "ഞാൻ",
+         "bro" : "സഹോദരന്‍" ,
+         "hello": "ഹലോ",
+         "good morning": "സുപ്രഭാതം",
+         "goodmorning": "സുപ്രഭാതം",
+         "thank you": "നന്ദി",
+         "thankyou": "നന്ദി",
+         "water": "വെള്ളം",
+         "food": "ഭക്ഷണം",
+         "love": "സ്നേഹം",
+         "family": "കുടുംബം",
+         "beautiful": "സുന്ദരമായ",
+         "happy": "സന്തോഷം",
+         "travel": "യാത്ര",
+         "friend": "സുഹൃത്ത്",
+         "book": "പുസ്തകം",
+         "music": "സംഗീതം",
+         "sun": "സൂര്യൻ",
+         "moon": "ചന്ദ്രൻ",
+         "star": "നക്ഷത്രം",
+         "rain": "മഴ",
+         "tree": "മരം",
+         "elephant": "ആന",
+         "school": "സ്കൂൾ",
+         "computer": "കമ്പ്യൂട്ടർ",
+         "internet": "ഇന്റർനെറ്റ്",
+         "smile": "ചിരി",
+         "rainbow": "വര്ണ്ണമയ",
+         "beach": "കടല്",
+         "mountain": "മല",
+         "sleep": "ഉറക്കം",
+         "coffee": "കോഫി",
+         "camera": "ക്യാമറ",
+         "doctor": "ഡോക്ടർ",
+         "flower": "പൂ",
+         "heart": "ഹൃദയം",
+         "butterfly": "പറവ",
+         "raincoat": "മഴക്കോട",
+         "train": "രെയിൽ",
+         "time": "സമയം",
+         "money": "പണം",
+         "sky": "ആകാശം",
+         "mobile" : "മൊബൈൽ",
+         "phone" : "ഫോൺ",
+         "dance": "നൃത്തം",
+         "hope": "ആശ",
+         "peace": "സമാധാനം",
+         "ocean": "സമുദ്രം",
+         "sunflower": "സൂര്യകാന്തി",
+         "road": "റോഡ്",
+         "laptop": "ലാപ്ടോപ്പ്",
+         "adventure": "സാഹസം",
+         "knowledge": "ജ്ഞാനം",
+         "dream": "സ്വപ്നം"
+}
+hindi= {
+         "me": "मैं",
+         "you": "तुम",
+         "i": "मैं",
+         "bro": "भाई",
+         "hello": "नमस्ते",
+         "goodbye": "अलविदा" ,
+         "thank you": "धन्यवाद" ,
+         "please": "कृपया" ,
+         "excuse me": "छोड़िए" ,
+         "yes": "हाँ",
+         "no": "नहीं",
+         "love": "प्रेम",
+         "friend": "दोस्त",
+         "family": "परिवार" ,
+         "food": "खाना" ,
+         "water": "पानी" ,
+         "home": "घर" ,
+         "time": "समय",
+         "work": "काम" ,
+         "play": "खेलना" ,
+         "learn": "सीखना",
+         "beautiful": "सुंदर",
+         "happy": "खुश" ,
+         "sad": "दुखी",
+         "day": "दिन" ,
+         "night": "रात",
+         "sun": "सूरज" ,
+         "moon": "चाँद",
+         "star": "तारा" ,
+         "sky": "आसमान",
+         "earth": "पृथ्वी" ,
+         "fire": "आग" ,
+         "air": "हवा" ,
+         "tree": "पेड़",
+         "flower": "फूल",
+         "river": "नदी",
+         "mountain": "पहाड़",
+         "ocean": "समुद्र",
+         "book": "किताब",
+         "pen": "क़लम" ,
+         "school": "स्कूल",
+         "student": "छात्र",
+         "hospital": "अस्पताल"
+}
+tamil={
+    "me": "நான்",
+    "you": "நீ",
+    "i": "நான்",
+    "bro": "சகோதரன்",
+    'hello': 'வணக்கம்',
+    'goodbye': 'குடமுழு',
+    'thank you': 'நன்றி',
+    'thankyou': 'நன்றி',
+    'please': 'தயவு',
+    'excuse me': 'மன்னிக்கவும்',
+    'yes': 'ஆம்',
+    'no': 'இல்லை',
+    'love': 'காதல்',
+    'friend': 'நண்பர்',
+    'family': 'குடும்பம்',
+    'food': 'உணவு',
+    'water': 'தண்ணீர்',
+    'home': 'வீடு',
+    'time': 'நேரம்',
+    'work': 'உழைப்பு',
+    'play': 'கூடு',
+    'learn': 'கற்றுக் கொள்ளுங்கள்',
+    'beautiful': 'அழகின்',
+    'happy': 'இனிமையான',
+    'sad': 'கனவுக்குழப்பமான',
+    'day': 'நாள்',
+    'night': 'இரவு',
+    'sun': 'சூரியன்',
+    'moon': 'சந்திரன்',
+    'star': 'நட்சத்திரம்',
+    'sky': 'வானம்',
+    'earth': 'பூமி',
+    'fire': 'காரணி',
+    'air': 'காற்று',
+    'tree': 'மரம்',
+    'flower': 'பூ',
+    'river': 'ஆறு',
+    'mountain': 'மலை',
+    'ocean': 'கடல்',
+    'book': 'புத்தகம்',
+    'pen': 'உரிமைக் காட்சி',
+    'school': 'பள்ளி',
+    'teacher': 'ஆசிரியர்',
+    'student': 'மாணவன்',
+    'hospital': 'மருத்துவமனை'
+}
+def trans(word_tran,lang_tran):
+    words = word_tran.split()
+    transilated_word = []
+    for word in words:
+        lang_tran.strip()
+        if(lang_tran.lower() == "malayalam"):
+            if word in malayalam:
+                transilated_word.append(malayalam[word])
+            else:
+                transilated_word.append(word)
+        if(lang_tran.lower() == "hindi"):
+            if word in hindi:
+                transilated_word.append(hindi[word])
+            else:
+                transilated_word.append(word)
+        if(lang_tran.lower() == "tamil"):
+            if word in tamil:
+                transilated_word.append(tamil[word])
+            else:
+                transilated_word.append(word)
+    return " ".join(transilated_word)
+
+transilate_word = input("Enter the sentence to be Changed into the language u prefer :\n").lower()
+valid0 = True
+while valid0:
+    transilate_lang = input("Enter the language to be Changed ( Malayalam/ Hindi/ Tamil ) : \n").lower()
+    if(transilate_lang == "malayalam"):
+        print(f"You have decided to transilate the sentence into {transilate_lang}")
+        print("******************************************************************")
+        i = trans(transilate_word, transilate_lang)
+        print("Transilated sentence :",i)
+        print("")
+        print("")
+        print("*************************************************")
+        valid = True
+        while valid:
+            cont = input("Do you want to continue ? (Yes/No) \n")
+            if(cont.upper() == "YES" or cont.upper() == "Y"):
+                print("you have choosen to Transilate the same sentence into another language")
+                valid = False
+            elif (cont.upper() == "NO" or cont.upper() == "N"):
+                print("You have decided to Exit")
+                valid = False
+                valid0 = False
+            else:
+                print("Please try again!!!! (YES or NO)")
+    elif(transilate_lang == "hindi"):
+        print(f"You have decided to transilate the sentence into {transilate_lang}")
+        print("******************************************************************")
+        i = trans(transilate_word, transilate_lang)
+        print("Transilated sentence :",i)
+        print("")
+        print("")
+        print("*************************************************")
+        valid = True
+        while valid:
+            cont = input("Do you want to continue ? (Yes/No) \n")
+            if (cont.upper() == "YES" or cont.upper() == "Y"):
+                print("you have choosen to Transilate the same sentence into another language")
+                valid = False
+            elif (cont.upper() == "NO" or cont.upper() == "N"):
+                print("You have decided to Exit")
+                valid = False
+                valid0 = False
+            else:
+                print("Please try again!!!! (YES or NO)")
+    elif(transilate_lang == "tamil"):
+        print(f"You have decided to transilate the sentence into {transilate_lang}")
+        print("******************************************************************")
+        i = trans(transilate_word, transilate_lang)
+        print("Transilated sentence :",i)
+        print("")
+        print("")
+        print("*************************************************")
+        valid = True
+        while valid:
+            cont = input("Do you want to continue ? (Yes/No) \n")
+            if (cont.upper() == "YES" or cont.upper() == "Y"):
+                print("you have choosen to Transilate the same sentence into another language")
+                valid = False
+            elif (cont.upper() == "NO" or cont.upper() == "N"):
+                print("You have decided to Exit")
+                valid = False
+                valid0 = False
+            else:
+                print("Please try again!!!! (YES or NO)")
+    else:
+        print("Please try again there is an error in the language you have typed")
