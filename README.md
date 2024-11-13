@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Blessen25
 - 👀 I’m interested in Development  
-- 🌱 I’m currently learning Python,SQL
-- 💞️ I’m looking to collaborate on python developer / data analyst
+- 🌱 I’m currently learning Python,SQL,HTML,CSS,REACT,Django
+- 💞️ I’m looking to collaborate on python developer / web development
 - 📫 How to reach me blessenvinoymathew25@gmail.com / blessen.csa1923@saintgits.org
 
 <!---
