@@ -41,7 +41,7 @@ if(game.lower()=='y' or game.lower()=='yes'):
             print("as you was walking the road you saw a jellewery box ")
             walk = input("will u open it 'OPEN' or would not open it and walk again 'WALK' \n")
             if (walk.lower() == 'open'):
-                print("a snake came inside the box and bit u ")
+                print("a snake came from inside the box and bit u ")
                 print('GAME OVER')
             if (walk.lower() == 'walk'):
                 print("you have found the way to get out of the forest")
