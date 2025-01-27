@@ -1,0 +1,50 @@
+def string_pallindrom(word):
+    word_rev = word[::-1]
+    if word == word_rev:
+        print("It is a pallindrome")
+    else:
+        print("It is not a pallindrome")
+def number_pallindrome(number):
+    x = number
+    new_num = 0
+    while number > 0:
+        rem_num = number % 10
+        new_num = (new_num * 10) + rem_num
+        number = number // 10
+    if new_num == x:
+        print(f"The number {x} is a pallindrome number")
+    else:
+        print(f"The number {x} is not a pallindrome number")
+def Yes_or_no():
+    yes_or_no_true = True
+    while yes_or_no_true:
+        yes_or_no_input = input("Are you sure you want to EXIT ?? 'YES' or 'NO' \n")
+        if yes_or_no_input.upper() == 'Y' or yes_or_no_input.upper() == 'YES':
+            yes_or_no_true = False
+            return yes_or_no_input.upper()
+        elif yes_or_no_input.upper() == 'N' or yes_or_no_input.upper() == 'NO':
+            yes_or_no_true = False
+            return yes_or_no_input.upper()
+        else:
+            print("Plese Type 'YES' or 'NO'")
+while True:
+    stringornumtrue = True
+    while stringornumtrue:
+        try:
+            stringornum = int(input("Enter 1 if your word is 'STRING' \nEnter 2 if your word is 'INTEGER ie NUMBER' \nEnter any other number to 'EXIT' : \n"))
+            stringornumtrue = False
+        except Exception as e:
+            print("There has been a problem, please enter the correct input ie a number\n")
+    if stringornum == 1:
+        str_input = input("Enter the Word which you wanna check is pallindrome or not : \n")
+        string_pallindrom(str_input)
+    elif stringornum == 2:
+        num_input = int(input("Enter the Number which you wanna check is pallindrome or not : \n"))
+        number_pallindrome(num_input)
+    else:
+        result = Yes_or_no()
+        if result == 'Yes' or result == 'Y':
+            print(f"You have Entered '{result}' which means exiting from the program ")
+            break
+        else:
+            print(f"You have Entered '{result}' which means continuing the program")
