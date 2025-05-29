@@ -1,0 +1,9 @@
+prices = [7,4,3,2,1]
+low = prices[0]
+high = 0
+for i in prices:
+    if i < low:
+        low = i
+    elif i - low > high:
+        high = i - low
+print(high)
